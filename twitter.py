@@ -26,11 +26,11 @@ text_file = open("dleague.txt", "w")
 for username in usernames:
     print(results)    
     print(username.text)
-    text_file.write("\nUser: " + (username.text).encode("utf-8"))
+    text_file.write("\nUser: " + str(username.text))
 
     for tweet in tweets:
         print(tweet.text)
-        text_file.write("\nComment: " + (tweet.text).encode("utf-8"))
+        text_file.write("\nComment: " + str(tweet.text))
         
 
 
